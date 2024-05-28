@@ -31,6 +31,7 @@ app.get('/api/getUserDetails', checkAuth, authController.getUserDetails);
 app.post('/api/add-product', checkAuth, productController.addProduct);
 app.get('/api/all-products', checkAuth, productController.allProducts);
 app.post('/api/update-product', checkAuth, productController.updateProduct);
+app.post('/api/delete-product', checkAuth, productController.deleteProduct);
 
 app.listen(PORT || 5000, () => {
   console.log('Server is running on port 5000');
